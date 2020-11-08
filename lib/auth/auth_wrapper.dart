@@ -6,7 +6,7 @@ class AuthWrapper extends StatelessWidget {
 
   final AuthService authService;
 
-  final Widget Function(Future<void> Function() logout) loggedIn;
+  final Widget loggedIn;
   final Widget loggedOut;
 
   const AuthWrapper({Key key, this.authService, this.loggedIn, this.loggedOut}) : super(key: key);
@@ -16,7 +16,7 @@ class AuthWrapper extends StatelessWidget {
     return StreamBuilder(
       stream: authService.authChanges,
       builder: (context, AsyncSnapshot<User> user) {
-        if (user.hasData) return loggedIn(authService.logout);
+        if (user.hasData) return loggedIn;
         return loggedOut;
       },
     );
