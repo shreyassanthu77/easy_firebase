@@ -1,10 +1,10 @@
+import 'package:easy_firebase/auth/models/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:easy_firebase/auth/services/auth_service_abstract.dart';
 
 class AuthWrapper extends StatelessWidget {
 
-  final AbstractAuthService authService;
+  final AuthService authService;
 
   final Widget Function(Future<void> Function() logout) loggedIn;
   final Widget loggedOut;

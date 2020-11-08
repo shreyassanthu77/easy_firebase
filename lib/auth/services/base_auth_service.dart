@@ -1,10 +1,10 @@
+import 'package:easy_firebase/auth/models/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:easy_firebase/auth/services/auth_service_abstract.dart';
 
-class BaseAuthService implements AbstractAuthService {
+class BaseAuthService implements AuthService {
   final FirebaseAuth _firebaseAuth;
 
-  BaseAuthService(this._firebaseAuth);
+  const BaseAuthService(this._firebaseAuth);
 
   User get user => _firebaseAuth.currentUser;
 
