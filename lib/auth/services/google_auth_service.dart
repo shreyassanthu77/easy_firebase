@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:easy_firebase/services/base_auth_service.dart';
+import 'package:easy_firebase/auth/services/base_auth_service.dart';
 
 class GoogleAuthService extends BaseAuthService {
   final FirebaseAuth firebaseAuth;

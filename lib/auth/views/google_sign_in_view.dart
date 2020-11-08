@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:easy_firebase/services/google_auth_service.dart';
+import 'package:easy_firebase/auth/services/google_auth_service.dart';
 
 class GoogleSignInView extends StatelessWidget {
 

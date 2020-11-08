@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:easy_firebase/services/auth_service_abstract.dart';
+import 'package:easy_firebase/auth/services/auth_service_abstract.dart';
 
 class BaseAuthService implements AbstractAuthService {
   final FirebaseAuth _firebaseAuth;
